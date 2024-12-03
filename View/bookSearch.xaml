@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="bookSearch" Height="600" Width="1000">
     <Grid>
-        <TextBox HorizontalAlignment="Center" Height="55" Margin="0,237,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="450"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="55" Margin="730,237,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="searchWord" HorizontalAlignment="Center" Height="55" Margin="0,237,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="450"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="55" Margin="730,237,0,0" VerticalAlignment="Top" Width="100" Click="OnSearchButonClick"/>
         <RadioButton Content="RadioButton" HorizontalAlignment="Left" Height="22" Margin="730,495,0,0" VerticalAlignment="Top" Width="214"/>
 
     </Grid>

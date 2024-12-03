@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookShelf.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,19 @@ namespace WpfApp1.Model
         public bookSearch()
         {
             InitializeComponent();
+        }
+
+        private void get(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnSearchButonClick(object sender, RoutedEventArgs e)
+        {
+            string searchWord = this.searchWord.Text;
+            bookApiClient bookApiClient = new bookApiClient();
+            bookApiClient.getBookData(searchWord);
+
         }
     }
 }
